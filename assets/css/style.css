@@ -5,6 +5,17 @@
     url("../fonts/Avenir.ttf") format("truetype"),
     url("../fonts/Avenir.svg#Avenir") format("svg");
 }
+
+/* Variable */
+:root {
+  /* primary/main color */
+  --clr-primary-1: #4b5d68;
+  --clr-primary-2: #9c69e2;
+  --clr-primary-3: #f063b8;
+  --clr-primary-4: #212353;
+  --clr-primary-5: #ffffffff;
+}
+
 *,
 ::after,
 ::before {
@@ -36,7 +47,7 @@ a,
 p {
   line-height: 28px;
   font-size: 16px;
-  color: #4b5d68;
+  color: var(--clr-primary-1);
 }
 
 ul {
@@ -82,7 +93,7 @@ header {
 .logo1 {
   height: 20px;
   width: 20px;
-  background-color: #9c69e2;
+  background-color: var(--clr-primary-2);
   border-radius: 20px;
   display: inline-block;
 }
@@ -90,7 +101,7 @@ header {
 .logo2 {
   height: 35px;
   width: 20px;
-  background-color: #f063b8;
+  background-color: var( --clr-primary-3);
   border-radius: 20px;
   display: inline-block;
   margin-left: 0.5rem;
@@ -100,7 +111,7 @@ header {
 .logo3 {
   height: 50px;
   width: 50px;
-  background-color: #212353;
+  background-color: var( --clr-primary-4);
   opacity: 10%;
   border-radius: 50px;
   display: inline-block;
@@ -109,13 +120,13 @@ header {
 
 /* Button */
 .requestBtn {
-  background-color: #ffffffff;
+  background-color: var( --clr-primary-5);
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   border: none;
   height: 60px;
   min-width: 210px;
-  color: #212353;
+  color: var( --clr-primary-4);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -124,12 +135,12 @@ header {
 .requestBtn span {
   margin-left: 1rem;
   font-size: 24px;
-  color: #9c69e2;
+  color: var(--clr-primary-2);
   font-weight: 900;
 }
 
 #learnMoreBtn {
-  background-color: #9c69e2;
+  background-color: var(--clr-primary-2);
   color: #ffffff;
   border-radius: 50px;
   height: 60px;
@@ -138,7 +149,7 @@ header {
 }
 
 #footerBtn1 {
-  background-color: #f063b8;
+  background-color: var( --clr-primary-3);
   color: #ffffff;
   border-radius: 50px;
   width: 170px;
@@ -161,7 +172,7 @@ header {
 #introTitle h2 {
   width: 70%;
   font-size: 80px;
-  color: #212353;
+  color: var( --clr-primary-4);
   margin-top: 1rem;
   padding: 0 12rem 4rem 0;
 }
@@ -185,10 +196,10 @@ header {
 
 #aboutHeadline p {
   width: 80%;
-  color: #4b5d68;
+  color: var(--clr-primary-1);
 }
 #aboutHeadline h2 {
-  color: #212353;
+  color: var( --clr-primary-4);
   font-size: 40px;
 }
 
@@ -203,7 +214,7 @@ header {
 /* Features */
 #features {
   margin: 10% auto;
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 #featuresHeader {
@@ -214,7 +225,7 @@ header {
 
 #featuresHeader h2 {
   font-size: 40px;
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 #featuresInfo {
@@ -286,7 +297,7 @@ header {
 
 .title {
   font-size: 24px;
-  color: #212353;
+  color: var( --clr-primary-4);
   margin-top: 2rem;
 }
 
@@ -303,13 +314,13 @@ header {
 /* Learn more button */
 .learnMore {
   font-size: 16px;
-  color: #212353;
+  color: var( --clr-primary-4);
   font-weight: 700;
 }
 .learnMore span {
   margin-left: 1rem;
   font-size: 24px;
-  color: #9c69e2;
+  color: var(--clr-primary-2);
   font-weight: 900;
 }
 
@@ -319,7 +330,7 @@ header {
 }
 
 #testSec {
-  background: #9c69e2;
+  background: var(--clr-primary-2);
   border-radius: 50px;
   height: 709px;
   width: 1118px;
@@ -341,7 +352,7 @@ header {
 }
 
 .testName {
-  color: #212353;
+  color: var( --clr-primary-4);
   margin-top: 2rem;
 }
 
@@ -380,7 +391,7 @@ header {
 
 .testTitle {
   font-size: 14px;
-  color: #9c69e2;
+  color: var( --clr-primary-2);
 }
 
 .testDetail {
@@ -408,7 +419,7 @@ header {
 }
 
 .redCircle {
-  background-color: #f063b8;
+  background-color: var( --clr-primary-3);
   height: 10px;
   width: 10px;
   border-radius: 10px;
@@ -451,7 +462,7 @@ header {
 
 /* Footer */
 .footer {
-  border-top: 1px solid #9c69e2;
+  border-top: 1px solid var(--clr-primary-2);
   display: flex;
   flex-direction: column;
 }
@@ -471,7 +482,7 @@ header {
 }
 
 .footerSec2 {
-  color: #212353;
+  color: var( --clr-primary-4);
   display: flex;
   flex-wrap: wrap;
   padding-top: 5rem;
@@ -486,29 +497,29 @@ header {
 .footerName p {
   padding-bottom: 3rem;
   font-weight: 700;
-  color: #212353;
+  color: var( --clr-primary-4);
   display: flex;
 }
 
 .footerAddress {
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 #footerNameData {
   font-size: 20px;
   font-weight: 700;
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 .footerAddrInf {
   padding-top: 3rem;
   padding-right: 15rem;
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 .footerAddrInf2 {
   padding-top: 1rem;
-  color: #212353;
+  color: var( --clr-primary-4);
 }
 
 #footerAbout {
@@ -520,5 +531,4 @@ header {
   line-height: 1.5rem;
   flex: 1;
 }
-
 

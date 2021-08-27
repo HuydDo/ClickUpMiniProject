@@ -1,3 +1,3 @@
-Click Up Mini Project
+## Click Up Mini Project
 
-Using HTML & CSS
+### Using HTML & CSS
